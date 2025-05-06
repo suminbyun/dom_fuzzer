@@ -1,0 +1,111 @@
+{
+    "BEFORE_MAIN": [
+        "aside", "header", "nav", "footer"
+    ],
+    "TEXTNODE_BLOCK": [
+        "a", "address", "article", "aside", "blockquote",
+        "datalist", "del", "details",  "dialog", "div",
+        "dl", "footer", "form", "h1", "h2",
+        "h3", "h4", "h5", "h6", "header",
+        "hgroup", "ins", "map", "menu", "nav",
+        "object", "p", "picture", "pre", "search",
+        "section", "slot", "template"
+    ],
+    "TEXTNODE_INLINE": [
+        "abbr", "b", "bdi", "bdo", "button",
+        "cite", "code", "data", "dfn", "em",
+        "i", "kbd", "label", "mark", "meter",
+        "noscript", "output", "progress", "q", "ruby",
+        "s", "samp", "small", "span", "strong",
+        "sub", "sup", "textarea", "time", "u",
+        "var"
+    ],
+    "NO_CLOSING": [
+        "area", "base", "br", "col", "embed",
+        "hr", "img", "input", "link", "meta",
+        "source", "track", "wbr"
+    ],
+    "NOT_ONLY": [
+        "li", "dt", "dd", "caption", "colgroup",
+        "col", "figcaption", "legend", "optgroup", "option",
+        "summary", "tbody", "td", "tfoot", "th",
+        "thead", "tr"
+           
+    ],
+    "@OL": [
+        "ol", "ol, li"
+    ],
+    "@UL": [
+        "ul", "ul, li"
+    ],
+    "@DL": [
+        "dl", "dl, @DT"
+    ],
+    "@DT": [
+        "dt, dd",
+        "dt, dd, dt, dd",
+        "dt, dd, dd",
+        "dt, dt, dd",
+        "dt, dt, dd, dd",
+        "dt, dt, dt, dd, dd",
+        "dt, dd, dd, dd"
+    ],
+    "@TABLE": [
+        "table",
+        "table, caption",
+        "table, @COLGROUP",
+        "table, @THEAD",
+        "table, @TBODY",
+        "table, @TFOOT",
+        "table, caption, @COLGROUP",
+        "table, caption, @THEAD",
+        "table, caption, @TBODY",
+        "table, caption, @TFOOT",
+        "table, @COLGROUP, @THEAD",
+        "table, @COLGROUP, @TBODY",
+        "table, @COLGROUP, @TFOOT",
+        "table, @THEAD, @TBODY",
+        "table, @THEAD, @TFOOT",
+        "table, @TBODY, @TFOOT",
+        "table, caption, @COLGROUP, @THEAD",
+        "table, caption, @COLGROUP, @TBODY",
+        "table, caption, @COLGROUP, @TFOOT",
+        "table, caption, @THEAD, @TBODY",
+        "table, caption, @THEAD, @TFOOT",
+        "table, caption, @TBODY, @TFOOT",
+        "table, @COLGROUP, @THEAD, @TBODY",
+        "table, @COLGROUP, @THEAD, @TFOOT",
+        "table, @COLGROUP, @TBODY, @TFOOT",
+        "table, @THEAD, @TBODY, @TFOOT",
+        "table, caption, @COLGROUP, @THEAD, @TBODY",
+        "table, caption, @COLGROUP, @THEAD, @TFOOT",
+        "table, caption, @COLGROUP, @TBODY, @TFOOT",
+        "table, caption, @THEAD, @TBODY, @TFOOT",
+        "table, @COLGROUP, @THEAD, @TBODY, @TFOOT",
+        "table, caption, @COLGROUP, @THEAD, @TBODY, @TFOOT"
+    ],
+    "@COLGROUP": [
+        "colgroup", "colgroup, col", "colgroup, col, col"
+    ],
+    "@THEAD": [
+        "thead", "thead, tr", "thead, tr, th", "thead, tr, th, th"
+    ],
+    "@TBODY": [
+        "tbody", "tbody, tr", "tbody, tr, td", "tbody, tr, td, td"
+    ],
+    "@TFOOT": [
+        "tfoot", "tfoot, tr", "tfoot, tr, td", "tfoot, tr, td, td"
+    ],
+    "@SELECT": [
+        "select, optgroup", "select, option", "select, optgroup, option"
+    ],
+    "@FIELDSET": [
+        "fieldset", "fieldset, legend"
+    ],
+    "@DETAILS": [
+        "details", "details, summary"
+    ],
+    "@FIGURE": [
+        "figure", "figure, figcaption"
+    ]
+}

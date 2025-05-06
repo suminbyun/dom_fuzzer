@@ -1,0 +1,733 @@
+{
+  "global_attributes": [
+    "accesskey", "autocapitalize", "autocorrect", "autofocus", "class",
+    "contenteditable", "data-*", "dir", "draggable", "enterkeyhint",
+    "hidden", "id", "inert", "inputmode", "is",
+    "itemid", "itemprop", "itemref", "itemscope", "itemtype",
+    "lang", "nonce", "part", "popover", "role",
+    "slot", "spellcheck", "style", "tabindex", "title",
+    "translate", "writingsuggestions"
+  ],
+  "Node": {
+    "properties": [
+      "baseURI", "childNodes", "firstChild", "isConnected", "lastChild",
+      "nextSibling", "nodeName", "nodeType", "nodeValue", "ownerDocument",
+      "parentNode", "parentElement", "previousSibling", "textContent"
+    ],
+    "method": [
+      "appendChild", "cloneNode", "compareDocumentPosition", "contains", "getRootNode", 
+      "hasChildNodes", "insertBefore", "isDefaultNamespace", "isEqualNode", "isSameNode",
+      "lookupPrefix", "lookupNamespaceURI", "normalize", "removeChild"
+    ]
+  },
+  "Element": {
+    "properties": [
+      "attributes", "childElementCount", "children", "classList", "className",
+      "clientHeight", "clientLeft", "clientTop", "clientWidth", "currentCSSZoom",
+      "firstElementChild", "id", "innerHTML", "lastElementChild", "localName",
+      "namespaceURI", "nextElementSibling", "outerHTML", "prefix", "previousElementSibling",
+       "scrollHeight", "scrollLeft", "scrollTop", "scrollWidth", "tagName"
+    ],
+    "method": [
+      "after", "animate", "append", "before", "checkVisibility",
+      "closest", "computedStyleMap", "getAnimations", "getAttribute", "getAttributeNames",
+      "getAttributeNode", "getAttributeNodeNS", "getAttributeNS", "getBoundingClientRect", "getClientRects",
+      "getElementsByClassName", "getElementsByTagName", "getElementsByTagNameNS", "hasAttribute", "hasAttributeNS",
+      "hasAttributes", "hasPointerCapture", "insertAdjacentElement", "insertAdjacentHTML", "insertAdjacentText",
+      "matches", "prepend", "querySelector", "querySelectorAll", "releasePointerCapture",
+      "remove" ,"removeAttribute", "removeAttributeNode", "removeAttributeNS", "replaceChildren",
+      "replaceWith", "requestFullscreen" ,"requestPointerLock", "scroll", "scrollBy",
+      "scrollIntoView", "scrollTo", "setAttribute", "setAttributeNode", "setAttributeNodeNS",
+      "setPointerCapture", "toggleAttribute"
+    ]
+  },
+  "HTMLElement": {
+    "properties": [
+      "accesskey", "accesskeyLabel", "anchorElement", "attributeStyleMap", "autocapitalize",
+      "autofocus", "contentEditable", "dataset", "dir", "draggable",
+      "enterKeyHint", "hidden", "inert", "innerText", "inputMode",
+      "isContentEditable", "lang", "nonce", "offsetHeight", "offsetLeft",
+      "offsetParent", "offsetTop", "offsetWidth", "outerText", "spellcheck",
+      "style", "tabIndex", "title", "translate"
+    ],
+    "method": [
+      "attachInternals","blur", "click", "focus", "hidePopover",
+      "showPopover", "togglePopover"
+    ]
+  },
+  "HEAD": {
+    "meta": {
+      "interface": "HTMLMetaElement",
+      "attributes": [
+        "charset", "content", "http-equiv", "media", "name"
+      ],
+      "properties": [
+        "charset", "content", "httpEquiv", "media", "name"
+      ]
+    },
+    "title": {
+      "interface": "HTMLTitleElement",
+      "attributes": [],
+      "properties": [
+        "text"
+      ]
+    },
+    "base": {
+      "interface": "HTMLBaseElement",
+      "attributes": [
+        "href", "target"
+      ],
+      "properties": [
+        "href", "target"
+      ]
+    },
+    "noscript": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    } 
+  },
+  "BODY": {
+    "a": {
+      "interface": "HTMLAnchorElement",
+      "attributes": [
+        "download", "href", "hreflang", "ping", "referrerpolicy",
+        "rel", "target", "type"
+      ],
+      "properties": [
+      "download", "hash", "host", "hostname", "href",
+      "hreflang", "password", "pathname", "ping", "port",
+      "protocol", "referrerPolicy", "rel", "search", "target",
+      "text", "type", "username"
+      ]
+    },
+    "abbr": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "address": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "area": {
+      "interface": "HTMLAreaElement",
+      "attributes": [
+        "alt", "coords", "download", "href", "ping",
+        "referrerpolicy", "rel", "shape", "target"
+      ],
+      "properties": [
+        "alt", "coords", "download", "hash", "host",
+        "hostname", "href", "password", "pathname", "ping",
+        "port", "protocol", "referrerPolicy", "rel", "search",
+        "shape", "target", "username"
+      ]
+    },
+    "article": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "aside": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "b": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "bdi": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "bdo": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "blockquote": {
+      "interface": "HTMLElement",
+      "attributes": [
+        "cite"
+      ],
+      "properties": [
+        "cite"
+      ]
+    },
+    "br": {
+      "interface": "HTMLBRElement",
+      "attributes": [],
+      "properties": []
+    },
+    "button": {
+      "interface": "HTMLButtonElement",
+      "attributes": [
+        "autofocus", "command", "commandfor", "disabled", "form",
+        "formaction", "formenctype", "formmethod", "formnovalidate", "formtarget",
+        "name", "popovertarget", "popovertargetaction", "type", "value"
+      ],
+      "properties": [
+        "command", "commandForElement", "disabled", "formAction", "formEnctype",
+        "formMethod", "formValidate", "formTarget", "name", "popoverTargetAction",
+        "popoverTargetElement", "type", "value"
+      ]
+    },
+    "canvas": {
+      "interface": "HTMLCanvasElement",
+      "attributes": [
+        "height", "width"
+      ],
+      "properties": [
+        "height", "width"
+      ]
+    },
+    "caption": {
+      "interface": "HTMLTableCaptionElement",
+      "attributes": [],
+      "properties": []
+    },
+    "cite": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "code": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "col": {
+      "interface": "HTMLTableColElement",
+      "attributes": [
+        "span"
+      ],
+      "properties": [
+        "span"
+      ]
+    },
+    "colgroup": {
+      "interface": "HTMLTableColElement",
+      "attributes": [
+        "span"
+      ],
+      "properties": [
+        "span"
+      ]
+    },
+    "data": {
+      "interface": "HTMLDataElement",
+      "attributes": [
+        "value"
+      ],
+      "properties": [
+        "value"
+      ]
+    },
+    "datalist": {
+      "interface": "HTMLDataListElement",
+      "attributes": [],
+      "properties": []
+    },
+    "dd": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "del": {
+      "interface": "HTMLModElement",
+      "attributes": [
+        "cite", "datetime"
+      ],
+      "properties": [
+        "cite", "datetime"
+      ]
+    },
+    "details": {
+      "interface": "HTMLDetailsElement",
+      "attributes": [
+        "open", "name"
+      ],
+      "properties": [
+        "open", "name"
+      ]
+    },
+    "dfn": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "dialog": {
+      "interface": "HTMLDialogElement",
+      "attributes": [
+        "closedby", "open"
+      ],
+      "properties": [
+        "closedBy", "open", "returnValue"
+      ]
+    },
+    "div": {
+      "interface": "HTMLDivElement",
+      "attributes": [],
+      "properties": []
+    },
+    "dl": {
+      "interface": "HTMLDListElement",
+      "attributes": [],
+      "properties": []
+    },
+    "dt": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "em": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "fieldset": {
+      "interface": "HTMLFieldSetElement",
+      "attributes": [
+        "disabled", "form", "name"
+      ],
+      "properties": [
+        "disabled", "name", "validationMessage", "validity", "willValidate"
+      ]
+    },
+    "figcaption": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "figure": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "footer": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "form": {
+      "interface": "HTMLFormElement",
+      "attributes": [
+        "accept-charset", "autocomplete","name", "rel", "action",
+        "enctype", "method", "novalidate", "target"
+      ],
+      "properties": [
+        "acceptCharset", "action", "autocomplete", "enctype",
+        "name", "noValidate", "method", "rel", "target"
+      ]
+    },
+    "h1": {
+      "interface": "HTMLHeadingElement",
+      "attributes": [],
+      "properties": []
+    },
+    "h2": {
+      "interface": "HTMLHeadingElement",
+      "attributes": [],
+      "properties": []
+    },
+    "h3": {
+      "interface": "HTMLHeadingElement",
+      "attributes": [],
+      "properties": []
+    },
+    "h4": {
+      "interface": "HTMLHeadingElement",
+      "attributes": [],
+      "properties": []
+    },
+    "h5": {
+      "interface": "HTMLHeadingElement",
+      "attributes": [],
+      "properties": []
+    },
+    "h6": {
+      "interface": "HTMLHeadingElement",
+      "attributes": [],
+      "properties": []
+    },
+    "header": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "hr": {
+      "interface": "HTMLHRElement",
+      "attributes": [],
+      "properties": []
+    },
+    "i": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "input": {
+      "interface": "HTMLInputElement",
+      "attributes": [
+        "accept", "alt", "autocomplete", "capture", "checked",
+        "dirname", "disabled", "form", "formaction", "formenctype",
+        "formmethod", "formnovalidate", "formtarget", "height", "list",
+        "max", "maxlength", "min", "minlength", "multiple",
+        "name", "pattern", "placeholder", "popovertarget", "popovertargetaction",
+        "readonly", "required", "size", "src", "step",
+        "type", "value", "width" 
+      ],
+      "properties": [
+        "defaultValue", "dirName", "multiple", "name", "popoverTargetAction",
+        "popoverTargetElement", "step", "type", "value", "valueAsDate",
+        "valueAsNumber", "formAction", "formEnctype", "formMethod", "formValidate",
+        "formTarget","disabled", "required", "checked", "defaultChecked",
+        "indeterminate", "alt", "height", "src", "width",
+        "accept", "capture", "files", "autocomplete", "max", 
+        "maxLength", "min", "minLength", "pattern", "placeholder",
+        "readOnly", "selectionDirection", "selectionEnd", "selectionStart", "size"
+      ]
+    },
+    "ins": {
+      "interface": "HTMLModElement",
+      "attributes": [
+        "cite", "datetime"
+      ],
+      "properties": [
+        "cite", "dateTime"
+      ]
+    },
+    "kbd": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "label": {
+      "interface": "HTMLLabelElement",
+      "attributes": [
+        "for"
+      ],
+      "properties": [
+        "control", "form", "htmlFor"
+      ]
+    },
+    "legend": {
+      "interface": "HTMLLegendElement",
+      "attributes": [],
+      "properties": [
+        "form"
+      ]
+    },
+    "li": {
+      "interface": "HTMLLIElement",
+      "attributes": [
+        "value"
+      ],
+      "properties": [
+        "value"
+      ]
+    },
+    "main": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "map": {
+      "interface": "HTMLMapElement",
+      "attributes": [
+        "name"
+      ],
+      "properties": [
+        "name"
+      ]
+    },
+    "mark": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "menu": {
+      "interface": "HTMLMenuElement",
+      "attributes": [],
+      "properties": []
+    },
+    "meter": {
+      "interface": "HTMLMeterElement",
+      "attributes": [
+        "value", "min", "max", "low", "high",
+        "optimum", "form"
+      ],
+      "properties": [
+        "high", "low", "max", "min", "optimum",
+        "value"
+      ]
+    },
+    "nav": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "object": {
+      "interface": "HTMLObjectElement",
+      "attributes": [
+        "data", "form", "height", "name", "type",
+        "width"
+      ],
+      "properties": [
+        "data", "height", "name", "type", "width"
+      ]
+    },
+    "ol": {
+      "interface": "HTMLOListElement",
+      "attributes": [
+        "reversed", "start", "type"
+      ],
+      "properties": [
+        "reversed", "start", "type"
+      ]
+    },
+    "optgroup": {
+      "interface": "HTMLOptGroupElement",
+      "attributes": [
+        "disabled", "label"
+      ],
+      "properties": [
+        "disabled", "label"
+      ]
+    },
+    "option": {
+      "interface": "HTMLOptionElement",
+      "attributes": [
+        "disabled", "label", "selected", "value"
+      ],
+      "properties": [
+        "defaultSelected", "disabled", "form", "index", "label",
+        "selected", "text", "value"
+      ]
+    },
+    "output": {
+      "interface": "HTMLOutputElement",
+      "attributes": [
+        "for", "form", "name"
+      ],
+      "properties": [
+        "defaultValue", "name", "value"
+      ]
+    },
+    "p": {
+      "interface": "HTMLParagraphElement",
+      "attributes": [],
+      "properties": []
+    },
+    "picture": {
+      "interface": "HTMLPictureElement",
+      "attributes": [],
+      "properties": []
+    },
+    "pre": {
+      "interface": "HTMLPreElement",
+      "attributes": [],
+      "properties": []
+    },
+    "progress": {
+      "interface": "HTMLProgressElement",
+      "attributes": [
+        "max", "value"
+      ],
+      "properties": [
+        "max", "value"
+      ]
+    },
+    "q": {
+      "interface": "HTMLQuoteElement",
+      "attributes": [
+        "cite"
+      ],
+      "properties": [
+        "cite"
+      ]
+    },
+    "rp": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "rt": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "ruby": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "s": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "samp": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "search": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "section": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "select": {
+      "interface": "HTMLSelectElement",
+      "attributes": [
+        "autocomplete", "disabled", "form", "multiple", "name",
+        "required", "size"
+      ],
+      "properties": [
+        "autocomplete", "disabled", "length", "multiple", "name",
+        "required", "selectedIndex", "size", "value"
+      ]
+    },
+    "small": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "span": {
+      "interface": "HTMLSpanElement",
+      "attributes": [],
+      "properties": []
+    },
+    "strong": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "sub": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "summary": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "sup": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "table": {
+      "interface": "HTMLTableElement",
+      "attributes": [],
+      "properties": [
+        "caption", "tHead", "tFoot", "rows", "tBodies"
+      ]
+    },
+    "tbody": {
+      "interface": "HTMLTableSectionElement",
+      "attributes": [],
+      "properties": [
+        "rows"
+      ]
+    },
+    "td": {
+      "interface": "HTMLTableCellElement",
+      "attributes": [
+        "colspan", "headers", "rowspan"
+      ],
+      "properties": [
+        "abbr", "cellIndex", "colSpan", "headers", "rowSpan",
+        "scope"
+      ]
+    },
+    "template":{
+      "interface": "HTMLTemplateElement",
+      "attributes": [],
+      "properties": []
+    },
+    "textarea": {
+      "interface": "HTMLTextAreaElement",
+      "attributes": [
+        "autocomplete", "cols", "dirname", "disabled", "form",
+        "maxlength", "minlength", "name", "placeholder", "readonly",
+        "required", "rows", "wrap"
+      ],
+      "properties": [
+        "autoComplete", "cols", "defaultValue", "dirName", "disabled",
+        "maxLength", "minLength", "name", "placeholder", "readOnly",
+        "required", "rows", "selectionDirection", "selectionEnd", "value",
+        "wrap"
+      ]
+    },
+    "tfoot": {
+      "interface": "HTMLTableSectionElement",
+      "attributes": [],
+      "properties": [
+        "rows"
+      ]
+    },
+    "th": {
+      "interface": "HTMLTableCellElement",
+      "attributes": [
+        "abbr", "colspan", "headers", "rowspan", "scope"
+      ],
+      "properties": [
+        "abbr", "cellIndex", "colSpan", "headers", "rowSpan",
+        "scope"
+      ]
+    },
+    "thead": {
+        "interface": "HTMLTableSectionElement",
+        "attributes": [],
+        "properties": [
+          "rows"
+        ]
+    },
+    "time": {
+      "interface": "HTMLTimeElement",
+      "attributes": [
+        "datetime"
+      ],
+      "properties": [
+        "dateTime"
+      ]
+    },
+    "tr": {
+      "interface": "HTMLTableRowElement",
+      "attributes": [],
+      "properties": [
+        "cells", "rowIndex", "sectionRowIndex"
+      ]
+    },
+    "u": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "ul": {
+      "interface": "HTMLUListElement",
+      "attributes": [],
+      "properties": []
+    },
+    "var": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    },
+    "wbr": {
+      "interface": "HTMLElement",
+      "attributes": [],
+      "properties": []
+    } 
+  }
+}

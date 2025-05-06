@@ -1,0 +1,624 @@
+{
+  "common": {
+    "attributes":{
+      "accesskey":["single_string"],
+      "autocapitalize": ["none", "sentences", "words", "characters"],
+      "contenteditable": ["true", "false", "plaintext-only"],
+      "data-*": ["string"],
+      "dir": ["ltr", "rtl", "auto"],
+      "draggable": [],
+      "enterkeyhint": ["enter", "done", "go", "next", "previous", "search", "send"],
+      "hidden": [],
+      "id": ["string"],
+      "inert": [],
+      "inputmode": [
+        "text", "tel", "url", "email", "numeric",
+        "decimal", "search"
+      ],
+      "lang": ["en"],
+      "spellcheck": ["true", "false"],
+      "tabindex": ["negative", "0", "positive"],
+      "title": ["string"],
+      "translate": ["yes", "no"]
+    },
+    "properties": {
+      "textContent": ["string", null],
+      "className": ["string"],
+      "id": ["string"],
+      "accesskey": ["single_string"],
+      "autocapitalize": ["characters", "none", "sentences", "words"],
+      "contentEditable": ["true", "false", "plaintext-only"],
+      "dir": ["ltr", "rtl", "auto"],
+      "draggable": [true, false],
+      "hidden": [true, false, "until-found"],
+      "inert": [true, false],
+      "lang": ["en"],
+      "spellcheck": [true, false],
+      "tabIndex": ["negative", "0", "positive"],
+      "title": ["string"],
+      "translate": [true, false]
+    }
+  },
+  "a":{
+    "attributes": {
+      "download":["", "filename"],
+      "href": ["URL"],
+      "hreflang": ["en"],
+      "ping": ["URL", "URLs"],
+      "referrerpolicy": [
+        "no-referrer", "no-referrer-when-downgrade", "origin", "origin-when-cross-origin", "same-origin",
+        "strict-origin", "strict-origin-when-cross-origin", "unsafe-url"
+      ],
+      "rel": [
+        "alternate", "author", "bookmark", "external", "help",
+        "license", "next", "nofollow", "noopener", "noreferrer",
+        "prefetch", "prev", "search", "tag"
+      ],
+      "target": ["_self", "_blank", "_parent", "_top"],
+      "type": [
+        "text/html", "text/plain", "application/pdf", "image/png", "image/jpeg",
+        "image/gif", "application/json"
+      ]
+    },
+    "properties":{
+      "download": ["", "filename"],
+      "href": ["URL"],
+      "hreflang": ["en"],
+      "ping": ["URL", "URLs"],
+      "referrerPolicy": [
+        "no-referrer", "no-referrer-when-downgrade", "origin",
+        "origin-when-cross-origin", "same-origin",
+        "strict-origin", "strict-origin-when-cross-origin", "unsafe-url"
+      ],
+      "rel": ["string"],  
+      "target": ["_self", "_blank", "_parent", "_top"],
+      "type": [
+        "text/html", "text/plain", "application/pdf", "image/png", "image/jpeg",
+        "image/gif", "application/json"
+      ]
+    }
+  },
+  "area": {
+    "attributes": {
+      "alt": ["string"],
+      "coords": {
+        "rect": ["0,0,250,30", "10,15,75,95", "20,50,25,45"],
+        "circle": ["75,75,75", "130,140,60", "90,150,30"],
+        "poly": ["45,250,0,95,130,135", "260,95,210,250,130,140", "90,130,50,95,200,100"]
+      },
+      "download": ["", "filename"],
+      "href": ["URL"],
+      "ping": ["URL", "URLs"],
+      "referrerpolicy": [
+        "no-referrer", "no-referrer-when-downgrade", "origin", "origin-when-cross-origin", "same-origin",
+        "strict-origin", "strict-origin-when-cross-origin", "unsafe-url"
+      ],
+      "rel": ["string"],
+      "shape": ["rect", "circle", "poly"],
+      "target": ["_self", "_blank", "_parent", "_top"]
+    },
+    "properties": {
+      "alt": ["string"],
+      "download": ["", "filename"],
+      "href": ["URL"],
+      "ping": ["URL", "URLs"],
+      "referrerPolicy": [
+        "no-referrer", "no-referrer-when-downgrade", "origin",
+        "origin-when-cross-origin", "same-origin",
+        "strict-origin", "strict-origin-when-cross-origin", "unsafe-url"
+      ],
+      "rel": ["string"],
+      "target": ["_self", "_blank", "_parent", "_top"]
+    }
+  },
+  "blockquote": {
+    "attributes": {
+      "cite": ["URL"]
+    },
+    "properties": {
+      "cite": ["URL"]
+    }
+  },
+  "button": {
+    "attributes": {
+      "disabled": [],
+      "form": ["idset_form"],
+      "name": ["string"],
+      "popovertarget": ["string"],
+      "popovertargetaction": ["hide", "show", "toggle"],
+      "type": ["submit", "reset", "button"],
+      "value": ["string"]
+    },
+    "properties": {
+      "disabled": [true, false],
+      "name": ["string"],
+      "type": ["submit", "reset", "button"],
+      "value": ["string"]
+    }
+  },
+  "canvas": {
+    "attributes": {
+      "height": ["150", "50", "300", "180", "220"],
+      "width": ["300", "200", "100", "50", "250"]
+    },
+    "properties": {
+      "height": ["150", "50", "300", "180", "220"],
+      "width": ["300", "200", "100", "50", "250"]
+    }
+  },
+  "col": {
+    "attributes": {
+    "span": ["positive"]
+    },
+    "properties": {
+      "span": ["positive"]
+    }
+  },
+  "colgroup": {
+    "attributes": {
+      "span": ["positive"]
+    },
+    "properties": {
+      "span": ["positive"]
+    }
+  },
+  "data": {
+    "attributes": {
+      "value": ["string"]
+    },
+    "properties": {
+      "value": ["string"]
+    }
+  },
+  "del": {
+    "attributes": {
+      "cite": ["URL"],
+      "datetime": ["2025-05-07", "2023-10-27", "2024-07-26", "2025-01-04", "2022-03-17"]
+    },
+    "properties": {
+      "cite": ["URL"],
+      "datetime": ["2025-05-07", "2023-10-27", "2024-07-26", "2025-01-04", "2022-03-17"]
+    }
+  },
+  "details": {
+    "attributes": {
+      "open": [],
+      "name": ["string"] 
+    },
+    "properties": {
+      "open": [true, false],
+      "name": ["string"]
+    }
+  },
+  "dialog": {
+    "attributes": {
+      "closedby": ["any", "closerequest", "none"],
+      "open": []
+    },
+    "properties": {
+      "closedBy": ["any", "closerequest", "none"],
+      "open": [true, false],
+      "returnValue": ["string"]
+    }
+  },
+  "fieldset": {
+    "attributes": {
+      "disabled": [],
+      "form": ["idset"],
+      "name": ["string"]
+    },
+    "properties": {
+      "disabled": [true, false],
+      "name": ["string"]
+    }
+  },
+  "form": {
+    "attributes": {
+      "accept-charset": ["UTF-8"],
+      "autocomplete": ["on", "off", "words", "characters"],
+      "name": ["string"],
+      "rel": [
+        "external", "help", "license", "next", "nofollow",
+        "noopener", "noreferrer", "opener", "prev", "search"
+      ],
+      "action": ["URL"],
+      "enctype": ["application/x-www-form-urlencoded", "multipart/form-data", "text/plain"],
+      "method": ["post", "get"],
+      "novalidate": ["true", "false"],
+      "target": ["_self", "_blank", "_parent", "_top"]
+    },
+    "properties": {
+      "acceptCharset": ["UTF-8"],
+      "action": ["URL"],
+      "autocomplete": ["on", "off", "words", "characters"],
+      "enctype": ["application/x-www-form-urlencoded", "multipart/form-data", "text/plain"],
+      "name": ["string"],
+      "noValidate": [true, false],
+      "method": ["get", "post"],
+      "rel": ["string"],
+      "target": ["_self", "_blank", "_parent", "_top"]
+    }
+  },
+  "input": { 
+    "type": {
+      "button": [
+        "autocapitalize", "autocomplete", "disabled", "form", "list",
+        "name", "popovertarget", "readonly", "required", "value"
+      ],
+      "checkbox": [
+        "autocomplete", "checked", "disabled", "form", "name",
+        "required", "value"
+      ],
+      "color": [
+        "autocapitalize", "autocomplete", "disabled", "form", "list",
+        "name", "value"
+      ],
+      "date": [
+        "autocapitalize", "autocomplete", "disabled", "form", "list",
+        "max", "min", "name", "readonly", "required",
+        "step", "value"
+      ],
+      "datetime-local": [
+        "autocapitalize", "autocomplete", "disabled", "form", "list",
+        "max", "min", "name", "readonly", "required",
+        "step", "value"
+      ],
+      "email": [
+        "autocapitalize", "dirname", "disabled", "form", "list",
+        "maxlength", "minlength", "multiple", "name", "pattern",
+        "placeholder", "readonly", "required", "size", "value"
+      ],
+      "file": [
+        "accept", "autocapitalize", "autocomplete", "capture", "disabled",
+        "form", "list", "multiple", "name", "readonly",
+        "required", "value"
+      ],
+      "hidden": [
+        "autocapitalize", "autocomplete", "dirname", "disabled", "form",
+        "name", "value"
+      ],
+      "month": [
+        "autocapitalize", "autocomplete", "disabled", "form", "list",
+        "max", "min", "name", "readonly", "required",
+        "step", "value"
+      ],
+      "number": [
+        "autocapitalize", "autocomplete", "disabled", "form", "list",
+        "max", "min", "name", "placeholder", "readonly",
+        "required", "step", "value"
+      ],
+      "password": [
+        "autocapitalize", "disabled", "form", "maxlength", "minlength",
+        "name", "pattern", "readonly", "required", "size",
+        "value"
+      ],
+      "radio": [
+        "autocomplete", "checked", "disabled", "form", "name",
+        "required", "value"
+      ],
+      "range": [
+        "autocapitalize", "autocomplete", "disabled", "form", "list",
+        "max", "min", "name", "step", "value"
+      ],
+      "reset": [
+        "autocapitalize", "autocomplete", "disabled", "form", "list",
+        "name", "readonly", "required", "value"
+      ], 
+      "search": [
+        "autocapitalize", "autocomplete", "dirname", "disabled", "form",
+        "list", "maxlength", "minlength", "name", "pattern",
+        "placeholder", "readonly", "required", "size", "value"
+      ],
+      "submit": [
+        "autocapitalize", "autocomplete", "disabled", "form", "formaction",
+        "formenctype", "formmethod", "formnovalidate", "formtarget", "list",
+        "readonly", "required", "value"
+      ],
+      "tel": [
+        "autocapitalize", "autocomplete", "dirname", "disabled", "form",
+        "list", "maxlength", "minlength", "name", "pattern",
+        "placeholder", "readonly", "required", "size", "value"
+      ],
+      "text": [
+        "autocapitalize", "autocomplete", "dirname", "disabled", "form",
+        "list", "maxlength", "minlength", "name", "pattern",
+        "placeholder","readonly", "required", "size", "value"
+      ],
+      "time": [
+        "autocapitalize", "autocomplete", "disabled", "form", "list",
+        "min", "name", "readonly", "required", "step", "value"
+      ],
+      "url": [
+        "autocapitalize", "dirname", "disabled", "form", "list",
+        "maxlength", "minlength", "name", "pattern", "placeholder",
+        "readonly", "required", "size", "value"
+      ],
+      "week": [
+        "autocapitalize", "autocomplete", "disabled", "form", "list",
+        "max", "min", "name", "readonly", "required",
+        "value"
+      ]
+    },
+    "attributes": {
+      "accept": ["img/*"],
+      "alt": ["string"],
+      "autocapitalize": ["on", "off", "words", "characters"],
+      "autocomplete": ["on", "off"],
+      "capture": ["user", "environment"],
+      "checked": ["true", "false"],
+      "dirname": ["rtl", "ltr"],
+      "disabled": ["true", "false"],
+      "form": ["idset"],
+      "formaction": ["URL"],
+      "formenctype": ["application/x-www-form-urlencoded", "multipart/form-data", "text/plain"],
+      "formmethod": ["get", "post", "dialog"],
+      "formnovalidate": ["true", "false"],
+      "formtarget": ["_self", "_blank", "_parent", "_top"],
+      "height": ["positive"],
+      "list": ["idset_datalist"],
+      "max": ["positive"],
+      "maxlength": ["positive"],
+      "min": ["positive"],
+      "minlength": ["positive"],
+      "multiple": [],
+      "name": ["string"],
+      "pattern": ["string"],
+      "placeholder": ["string"],
+      "popovertarget": ["string"],
+      "popovertargetaction": ["toggle","show","hide"],
+      "readonly": ["true", "false"],
+      "required": ["true", "false"],
+      "size": ["positive"],
+      "src": ["URL"],
+      "step": ["positive"],
+      "value": ["string"],
+      "width": ["positive"]
+    }, 
+    "properties": {
+      "defaultValue": ["string"],
+      "dirName": ["rtl", "ltr"],
+      "name": ["string"],
+      "value": ["string"]
+    }
+  },
+  "ins": {
+    "attributes": {
+      "cite": ["URL"],
+      "datetime": ["2025-05-07", "2023-10-27", "2024-07-26", "2025-01-04", "2022-03-17"]
+    },
+    "properties": {
+      "cite": ["URL"],
+      "dateTime": ["2025-05-07", "2023-10-27", "2024-07-26", "2025-01-04", "2022-03-17"]
+    }
+  },
+  "label": {
+    "attributes": {
+      "for": ["idset_label"]
+    },
+    "properties": {
+      "htmlFor": ["idset_label"]
+    }
+  },
+  "li": {
+    "attributes": {
+      "value": ["positive"] 
+    },
+    "properties": {
+      "value": ["positive"] 
+    }
+  },
+  "map": {
+    "attributes": {
+      "name": ["string"]
+    },
+    "properties": {
+      "name": ["string"]
+    }
+  },
+  "meter": {
+    "attributes": {
+      "value": ["45", "65", "85"],
+      "min": ["0", "10", "20"],
+      "max": ["100", "120", "150"],
+      "low": ["20", "30", "40"],
+      "high": ["60", "80", "100"],
+      "optimum": ["40", "50", "70"],
+      "form": ["idset_form", null]
+    },
+    "properties": {
+      "high": ["60", "80", "100"],
+      "low": ["20", "30", "40"],
+      "max": ["100", "120", "150"],
+      "min": ["0", "10", "20"],
+      "optimum": ["40", "50", "70"],
+      "value": ["45", "65", "85"]
+    }
+  },
+  "object": {
+    "attributes": {
+      "data": ["URL"],
+      "form": ["idset_form", null],
+      "height": ["200", "350", "50", "120", "300"],
+      "name": ["string"],
+      "type": [
+        "text/html", "text/plain", "application/pdf", "image/png", "image/jpeg",
+        "image/gif", "application/json"
+      ],
+      "width": ["250", "70", "400", "140", "330"]
+    },
+    "properties": {
+      "data": ["URL"],
+      "height": ["200", "350", "50", "120", "300"],
+      "name": ["string"],
+      "type": [
+        "text/html", "text/plain", "application/pdf", "image/png", "image/jpeg",
+        "image/gif", "application/json"
+      ],
+      "validationMessage": ["string"],
+      "width": ["250", "70", "400", "140", "330"]
+    }
+  },
+  "ol": {
+    "attributes": {
+      "reversed": [],
+      "start": ["positive"],
+      "type": ["1", "a", "A", "i", "I"]
+    },
+    "properties": {
+      "reversed": [true, false],
+      "start": ["positive"],
+      "type": ["1", "a", "A", "i", "I"]
+    }
+  },
+  "optgroup": {
+    "attributes": {
+      "disabled": [],
+      "label": ["string"]
+    },
+    "properties": {
+      "disabled": [true, false],
+      "label": ["string"]
+    }
+  },
+  "option": {
+    "attributes": {
+      "disabled": [],
+      "label": ["string"],
+      "selected": [],
+      "value": ["string"]
+    },
+    "properties": {
+      "defaultSelected": [true, false],
+      "disabled": [true, false],
+      "label": ["string"],
+      "selected": [true, false],
+      "text": ["string"],
+      "value": ["string"]
+    }
+  },
+  "output": {
+    "attributes": {
+      "form": ["idset_form"],
+      "name": ["string"]
+    },
+    "properties": {
+      "defaultValue": ["string"],
+      "name": ["string"]
+    }
+  },
+  "progress": {
+    "attributes": {
+      "max": ["1.0", "10.0", "100.0"],
+      "value": ["0.1", "2.5", "99.9"]
+    },
+    "properties": {
+      "max": ["1.0", "10.0", "100.0"],
+      "value": ["0.1", "2.5", "99.9"]
+    }
+  },
+  "q": {
+    "attributes": {
+      "cite": ["URL"]
+    },
+    "properties": {
+      "cite": ["URL"]
+    }
+  },
+  "select": {
+    "attributes": {
+      "autocomplete": ["on", "off"],
+      "disabled": [],
+      "form": ["idset"],
+      "multiple": ["true", "false"],
+      "name": ["string"],
+      "required": ["true", "false"],
+      "size": ["positive"]
+    },
+    "properties": {
+      "autocomplete": ["on", "off"],
+      "disabled": [true, false],
+      "length": ["positive"],
+      "multiple": [true, false],
+      "name": ["string"],
+      "required": [true, false],
+      "selectedIndex": ["positive"],
+      "size": ["positive"],
+      "value": ["string"]
+    }
+  },
+  "table": {
+    "attributes": [],
+    "properties": {
+      "caption": ["string"]
+    }
+  },
+  "td": {
+    "attributes": {
+      "colspan": ["positive"],
+      "headers": ["idset_thtd"],
+      "rowspan": ["positive"]
+    },
+    "properties": {
+      "abbr": ["string"],
+      "colSpan": ["positive"],
+      "rowSpan": ["positive"],
+      "scope": ["row", "col", "rowgroup", "colgroup"]
+    }
+  },
+  "textarea": {
+    "attributes": {
+      "autocomplete": ["on", "off"],
+      "cols": ["positive"],
+      "dirname": ["rtl", "ltr"],
+      "disabled": [],
+      "form": ["idset"],
+      "maxlength": ["positive"],
+      "minlength": ["positive"], 
+      "name": ["string"],
+      "placeholder": ["string"],
+      "readonly": ["true", "false"],
+      "required": ["true", "false"],
+      "rows": ["positive"],
+      "wrap": ["hard", "soft"]
+    },
+    "properties": {
+      "autoComplete": ["on", "off"],
+      "cols": ["positive"],
+      "defaultValue": ["string"],
+      "dirName": ["rtl", "ltr"],
+      "disabled": [true, false],
+      "maxLength": ["positive"],
+      "minLength": ["positive"],
+      "name": ["string"],
+      "placeholder": ["string"],
+      "readOnly": [true, false],
+      "required": [true, false],
+      "rows": ["positive"],
+      "value": ["string"],
+      "wrap": ["hard", "soft"]
+    }
+  },
+  "th": {
+    "attributes": {
+      "abbr": ["string"],
+      "colspan":["positive"],
+      "headers": ["idset_thtd"],
+      "rowspan": ["positive"],
+      "scope": ["row", "col", "rowgroup", "colgroup"]
+    },
+    "properties": {
+      "abbr": ["string"],
+      "colSpan": ["positive"],
+      "rowSpan": ["positive"],
+      "scope": ["row", "col", "rowgroup", "colgroup"]
+    }
+  },
+  "time": {
+    "attributes": {
+      "datetime": ["2025-05-07", "2023-10-27", "2024-07-26", "2025-01-04", "2022-03-17"]
+    },
+    "properties": {
+      "dateTime": ["2025-05-07", "2023-10-27", "2024-07-26", "2025-01-04", "2022-03-17"]
+    }
+  }
+}
