@@ -90,6 +90,23 @@ def generate_properties_for_tag(tag_name, exclude_id=None, max_props=9):
     properties["id"] = tag_id
     used_keys.add("id")
 
+    if tag_name == "input":
+        input_types = list(METADATA.get("input", {}).get("type", {}).keys())
+        input_type = random.choice(input_types)
+        properties["type"] = input_type
+        used_keys.add("type")
+
+        js_input_props = METADATA.get("input", {}).get("properties", {})
+        for prop, options in js_input_props.items():
+            if prop in used_keys:
+                continue
+            value = pick_valid_value(options, exclude_id=tag_id, tag_name=tag_name, attr_name=prop)
+            if value is not None:
+                properties[prop] = value
+                used_keys.add(prop)
+            if len(properties) >= max_props:
+                break
+
     prop_candidates = []
 
     common_props = METADATA.get("common", {}).get("properties", {})

@@ -113,6 +113,18 @@ def generate_attributes_for_tag(tag_name, exclude_id=None):
     if isinstance(tag_attrs, list):
         tag_attrs = {attr: ["string"] for attr in tag_attrs}
 
+    if tag_name == "input":
+        input_types = list(METADATA.get("input", {}).get("type", {}).keys())
+        input_type = random.choice(input_types)
+        attributes["type"] = input_type
+
+        type_attrs = METADATA.get("input", {}).get("type", {}).get(input_type, [])
+        type_attr_dict = {
+            attr: METADATA.get("input", {}).get("attributes", {}).get(attr, ["string"])
+            for attr in type_attrs
+        }
+        tag_attrs = type_attr_dict
+
     for attr, options in tag_attrs.items():
         if random.random() < 0.7:
             if tag_name == "area" and attr == "coords" and isinstance(options, dict):
