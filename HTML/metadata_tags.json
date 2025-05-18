@@ -42,9 +42,7 @@
   "a":{
     "attributes": {
       "download":["", "filename"],
-      "href": ["URL"],
       "hreflang": ["en"],
-      "ping": ["URL", "URLs"],
       "referrerpolicy": [
         "no-referrer", "no-referrer-when-downgrade", "origin", "origin-when-cross-origin", "same-origin",
         "strict-origin", "strict-origin-when-cross-origin", "unsafe-url"
@@ -62,9 +60,7 @@
     },
     "properties":{
       "download": ["", "filename"],
-      "href": ["URL"],
       "hreflang": ["en"],
-      "ping": ["URL", "URLs"],
       "referrerPolicy": [
         "no-referrer", "no-referrer-when-downgrade", "origin",
         "origin-when-cross-origin", "same-origin",
@@ -87,8 +83,6 @@
         "poly": ["45,250,0,95,130,135", "260,95,210,250,130,140", "90,130,50,95,200,100"]
       },
       "download": ["", "filename"],
-      "href": ["URL"],
-      "ping": ["URL", "URLs"],
       "referrerpolicy": [
         "no-referrer", "no-referrer-when-downgrade", "origin", "origin-when-cross-origin", "same-origin",
         "strict-origin", "strict-origin-when-cross-origin", "unsafe-url"
@@ -100,8 +94,6 @@
     "properties": {
       "alt": ["string"],
       "download": ["", "filename"],
-      "href": ["URL"],
-      "ping": ["URL", "URLs"],
       "referrerPolicy": [
         "no-referrer", "no-referrer-when-downgrade", "origin",
         "origin-when-cross-origin", "same-origin",
@@ -251,7 +243,7 @@
       ],
       "color": [
         "autocapitalize", "autocomplete", "disabled", "form", "list",
-        "name", "value"
+        "name"
       ],
       "date": [
         "autocapitalize", "autocomplete", "disabled", "form", "list",
@@ -261,7 +253,7 @@
       "datetime-local": [
         "autocapitalize", "autocomplete", "disabled", "form", "list",
         "max", "min", "name", "readonly", "required",
-        "step", "value"
+        "step"
       ],
       "email": [
         "autocapitalize", "dirname", "disabled", "form", "list",
@@ -271,7 +263,7 @@
       "file": [
         "accept", "autocapitalize", "autocomplete", "capture", "disabled",
         "form", "list", "multiple", "name", "readonly",
-        "required", "value"
+        "required"
       ],
       "hidden": [
         "autocapitalize", "autocomplete", "dirname", "disabled", "form",
@@ -285,7 +277,7 @@
       "number": [
         "autocapitalize", "autocomplete", "disabled", "form", "list",
         "max", "min", "name", "placeholder", "readonly",
-        "required", "step", "value"
+        "required", "step"
       ],
       "password": [
         "autocapitalize", "disabled", "form", "maxlength", "minlength",
@@ -335,8 +327,7 @@
       ],
       "week": [
         "autocapitalize", "autocomplete", "disabled", "form", "list",
-        "max", "min", "name", "readonly", "required",
-        "value"
+        "max", "min", "name", "readonly", "required"
       ]
     },
     "attributes": {
@@ -393,10 +384,10 @@
   },
   "label": {
     "attributes": {
-      "for": ["idset_label"]
+      "for": ["idset_input", "idset_textarea", "idset_select"]
     },
     "properties": {
-      "htmlFor": ["idset_label"]
+      "htmlFor": ["idset_input", "idset_textarea", "idset_select"]
     }
   },
   "li": {
@@ -544,12 +535,6 @@
       "selectedIndex": ["positive"],
       "size": ["positive"],
       "value": ["string"]
-    }
-  },
-  "table": {
-    "attributes": [],
-    "properties": {
-      "caption": ["string"]
     }
   },
   "td": {

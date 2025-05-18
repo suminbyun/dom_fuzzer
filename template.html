@@ -4,29 +4,55 @@
   <meta charset="UTF-8">
   <title>DOM FUZZER</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="timer.js"></script>
+  <script defer src="inputstack.js"></script>
 </head>
 <body>
 
 {{HTML_1}}
 
 <script>
+window.addEventListener('DOMContentLoaded', () => {
+console.log("[DOM Ready] tick:", gcTimer.getTick());
+});
+
+console.log("[INLINE] tick:", window.gcTimer?.getTick?.());
+
+setTimeout(() => {
+console.log("[TIMEOUT] tick:", gcTimer.getTick());
+window.recordInitialTick();
 
 {{JS_1}}
+
+}, 4000);
 
 </script>
 
 {{HTML_2}}
 
+<iframe src="https://firstpartytest.site/test.html"></iframe>
 <iframe src="https://www.firstpartytest.site/test.html"></iframe>
+<iframe src="https://sub.firstpartytest.site/test.html"></iframe>
 
 {{HTML_3}}
 
-<script>
+<script> 
+
+setTimeout(() => {
 
 {{JS_2}}
 
+const payload = logBuffer.slice(0, logIndex * 4);
+navigator.sendBeacon('/api/log', payload);
+
+}, 4000);
+
+setTimeout(() => {
+
 {{APPEND_ALL}}
-  
+
+}, 6000);
+
 </script>
 
 {{HTML_4}}

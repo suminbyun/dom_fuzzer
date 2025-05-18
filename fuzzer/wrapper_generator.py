@@ -1,6 +1,14 @@
 from fuzzer.property_generator import generate_properties_for_tag
 from fuzzer.rule_expander import expand_rule
 from fuzzer.rule_checker import is_valid_child
+from fuzzer.for_tree import (
+    Node,
+    generate_incremental_text,
+    reset_counters,
+    get_element_count,
+    element_counter,
+    build_strongly_structured_tree
+)
 
 FLAT_CHILD_CONTAINERS = {"dl", "ul", "ol", "select", "fieldset", "details", "figure"}
 TABLE_LIKE = {"table"}
@@ -8,35 +16,6 @@ NO_CLOSING = {"br", "wbr", "hr", "img", "input", "area", "embed"}
 
 ALL_NODES = []
 APPENDED_NODES = set()
-
-element_counter = 0
-text_counter = 1
-current_prefix = "el_"
-
-def reset_counters(prefix="el_"):
-    global element_counter, text_counter, current_prefix
-    element_counter = 1
-    text_counter = 1
-    current_prefix = prefix
-
-def generate_incremental_text():
-    global text_counter
-    val = f"{text_counter:06d}"
-    text_counter += 1
-    return val
-
-def get_element_count(prefix="el_"):
-    return element_counter
-
-class Node:
-    def __init__(self, tag, children=None, text="", prefix=None):
-        global element_counter, current_prefix
-        self.tag = tag
-        self.children = children or []
-        self.text = text
-        pfx = prefix or current_prefix
-        self.var_name = f"{pfx}{element_counter:06d}"
-        element_counter += 1
 
 def render_js_tag(tag_name, children=None, max_props=9, prefix="el_"):
     node = Node(tag_name, children, prefix=prefix)
@@ -67,7 +46,6 @@ def render_js_dom_tree(node, max_props=9, prefix="el_"):
 
     ALL_NODES.append(node)
 
-    # Child Node
     for child in node.children:
         if isinstance(child, Node):
             child_lines, child_nodes = render_js_dom_tree(child, max_props=max_props, prefix=prefix)
@@ -80,7 +58,6 @@ def render_js_dom_tree(node, max_props=9, prefix="el_"):
 
     return lines, [node]
 
-# Tree Generation Utils
 def build_nested_tree_from_list(tags, html_rule, prefix="el_"):
     if not tags:
         return None
@@ -110,11 +87,16 @@ def build_dom_tree(tags, html_rule, prefix="el_"):
     if not tags:
         return None
 
+    root_tag = tags[0]
+
+    strong_node = build_strongly_structured_tree(root_tag, prefix=prefix)
+    if strong_node:
+        return strong_node
+
     def expand_if_group(tag):
         key = f"@{tag.upper()}"
         return expand_rule(key, html_rule) if key in html_rule else [tag]
 
-    root_tag = tags[0]
     root = Node(root_tag, prefix=prefix)
 
     if root_tag in FLAT_CHILD_CONTAINERS:

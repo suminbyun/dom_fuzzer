@@ -5,17 +5,8 @@ FORBIDDEN_IN_A = {
     "label", "meter", "progress"
 }
 
-used_tags = {
-    "main": False,
-    "heading_used": set()
-}
-
-def reset_state():
-    used_tags["main"] = False
-    used_tags["heading_used"] = set()
-
-def is_main_already_used():
-    return used_tags["main"]
+def is_main_already_used(used_tags):
+    return used_tags.get("main", False)
 
 def is_valid_child(parent, child, html_rule):
     if parent == "a" and (child in html_rule["TEXTNODE_BLOCK"] or child in FORBIDDEN_IN_A):
@@ -24,9 +15,9 @@ def is_valid_child(parent, child, html_rule):
         return False
     return True
 
-def is_tag_allowed(tag, apply=False):
+def is_tag_allowed(tag, used_tags, apply=False):
     if tag == "main":
-        if used_tags["main"]:
+        if used_tags.get("main", False):
             return False
         if apply:
             used_tags["main"] = True
@@ -39,15 +30,16 @@ def is_tag_allowed(tag, apply=False):
             "h5": "h4",
             "h6": "h5",
         }
+        heading_used = used_tags.setdefault("heading_used", set())
+
         if tag != "h1":
             required = required_prior[tag]
-            if required not in used_tags["heading_used"]:
+            if required not in heading_used:
                 return False
 
-        if tag in used_tags["heading_used"]:
+        if tag in heading_used:
             return False
         if apply:
-            used_tags["heading_used"].add(tag)
+            heading_used.add(tag)
 
     return True
-

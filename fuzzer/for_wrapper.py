@@ -21,5 +21,5 @@ PROPERTY_NAME_MAP = {
 }
 
 WRAPPER_ONLY_PROPERTIES = {
-    "textContent": lambda: f"0x{random.randint(0, 0xffffffff):08x}"
+    "textContent": lambda: f"0x{random.randint(0, 0xFFFFFFFFFFFFFFFF):016x}"
 }

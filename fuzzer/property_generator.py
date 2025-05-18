@@ -19,7 +19,7 @@ with open("HTML/metadata_tags.json", "r") as f:
     METADATA = json.load(f)
 
 def generate_tag_id(tag=None):
-    tag_id = f"0x{random.randint(0, 0xffffffff):08x}"
+    tag_id = f"0x{random.randint(0, 0xFFFFFFFFFFFFFFFF):016x}"
     if tag in ID_REGISTRY:
         ID_REGISTRY[tag].append(tag_id)
     elif tag in {"td", "th"}:
@@ -43,7 +43,7 @@ def generate_value(value_type, exclude_id=None, tag_name=None, attr_name=None):
         return " ".join(random.sample(url_pool, min(len(url_pool), 2)))
 
     if value_type == "string":
-        return f"0x{random.randint(0, 0xffffffff):08x}"
+        return f"0x{random.randint(0, 0xFFFFFFFFFFFFFFFF):016x}"
 
     if value_type == "single_string":
         return random.choice("abcdefghijklmnopqrstuvwxyz")
